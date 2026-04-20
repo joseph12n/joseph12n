@@ -1,57 +1,104 @@
-# 👋 ¡Hola! Soy Joseph Varon
+# 👋 ¡Hola! Soy Joseph Varón
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=2E97F7&center=true&vCenter=true&width=500&lines=Full+Stack+Developer;Especialista+en+MERN+Stack;ADSO+Student+%40+SENA;Entusiasta+de+IA+Local+y+Ollama" alt="Typing SVG" />
 
-  <p align="center">
+  <!-- Header dinámico -->
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=2800&pause=800&color=2E97F7&center=true&vCenter=true&width=720&lines=Full+Stack+Developer;ADSO+Student+%40+SENA;MERN+%2B+Mobile;Aprendiendo+Next.js+%2F+TypeScript+%2F+Docker;IA+Local+con+Ollama" alt="Typing SVG" />
+
+  <!-- Banda de badges (rápida de leer) -->
+  <p>
+    <img alt="Location" src="https://img.shields.io/badge/Bogot%C3%A1%2C%20Colombia-111827?style=for-the-badge&logo=googlemaps&logoColor=white" />
+    <img alt="Focus" src="https://img.shields.io/badge/Focus-Software%20Escalable-111827?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img alt="Learning" src="https://img.shields.io/badge/2026-Learning%20Mode-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </p>
+
+  <!-- Stats card superior -->
+  <p>
     <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=joseph12n&theme=tokyonight" alt="Detailed Stats" />
   </p>
+
 </div>
 
 ---
 
 ## 🚀 Sobre mí
 
-Soy un desarrollador de **Bogotá, Colombia**, enfocado en construir software que no solo funcione, sino que sea escalable y eficiente. Actualmente curso el tecnólogo en **Análisis y Desarrollo de Software (ADSO)**, combinando mi formación académica con proyectos reales de alto rendimiento.
+Soy un desarrollador de **Bogotá, Colombia**, enfocado en construir software **moderno, mantenible y escalable**. Actualmente curso el tecnólogo en **Análisis y Desarrollo de Software (ADSO)** en el SENA y desarrollo proyectos reales mientras incorporo nuevas tecnologías.
 
-* ☕ **Disciplina:** Me levanto a las 5:00 AM para entrenar mi cuerpo antes de entrenar mi mente con código.
-* 🛠️ **Enfoque actual:** Perfeccionando el stack **MERN** (MongoDB, Express, React, Node.js) y automatizando flujos con IA local (Ollama).
-* ⚙️ **Experiencia:** Ex-pasante de Soporte de Bases de Datos en VC Medios - A&E.
-* 🎧 **Vibe:** Programando usualmente al ritmo de Tyler, the Creator.
-
----
-
-## 🛠️ Tecnologías y Herramientas
-
-### 🌐 Frontend & UI/UX
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=react,js,html,css,tailwind,figma" alt="Frontend skills" />
-</p>
-
-### ⚙️ Backend & Bases de Datos
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,php,mysql,java" alt="Backend skills" />
-</p>
-
-### 🔧 Herramientas & Workflow
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,postman,linux" alt="Tools" />
-</p>
-
-> **Nota:** Manejo metodologías ágiles (**Scrum**) con **ZenHub** para la gestión de ciclos de desarrollo.
+- ☕ **Disciplina:** rutina temprana (entreno cuerpo y luego código).
+- 🧠 **Enfoque 2026:** fortalecer bases y subir el nivel con **TypeScript, Next.js, Docker, PostgreSQL, Redis y CI/CD**.
+- 🤖 **Interés fuerte:** **IA local con Ollama** (privacidad, bots offline y automatización).
 
 ---
 
-## 🌟 Proyectos Destacados
+## 🧭 Stack (Actual + Objetivo 2026)
 
-### 🏢 [KN-Store - E-commerce Enterprise](https://github.com/joseph12n/KN-Store)
-Mi proyecto insignia. Un sistema de gestión de inventario y ventas diseñado para escalabilidad.
-* **Tech Stack:** React, Node.js, Express, MongoDB.
-* **Logros:** Implementación de arquitectura limpia y gestión de estados complejos.
+> **Nota:** Lo marcado como **Objetivo 2026** son tecnologías en aprendizaje/adopción (incluyendo para KN-Store).
 
-### 🏘️ [Gestión Residencial](https://github.com/joseph12n/conjuntos_residenciales-main)
-Sistema administrativo para conjuntos residenciales.
-* **Tech Stack:** PHP, MySQL, JavaScript.
+### ✅ Actual (en uso)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,js,html,css,tailwind,nodejs,express,mongodb,php,mysql,java,git,github,linux,vscode,postman,figma" alt="Current stack" />
+</p>
+
+### 🎯 Objetivo 2026 (aprendizaje/adopción)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=nextjs,ts,docker,postgres,redis,githubactions,nestjs,python" alt="2026 stack" />
+</p>
+
+- **Frontend:** Next.js + TypeScript (mejor DX, SSR/SEO cuando aplique)
+- **Backend:** NestJS (arquitectura por módulos, escalabilidad)
+- **DevOps:** Docker + GitHub Actions (deploys y pipelines reproducibles)
+- **Datos:** PostgreSQL + Redis (consultas sólidas + caching/colas)
+- **IA Local:** Ollama (asistentes offline / automatización sin nube)
+
+---
+
+## 🌟 Proyectos (selección)
+
+### ⭐ Principal / Flagship
+### 🏢 KN-Store — E-commerce (Proyecto estudiantil)
+Repositorio: https://github.com/joseph12n/KN-Store
+
+E-commerce orientado a inventario/ventas, diseñado para crecer de forma modular.
+- **Stack actual:** React + Node.js + Express + MongoDB
+- **Objetivo 2026 (en adopción para el proyecto):** TypeScript, Next.js, Docker, PostgreSQL, Redis, CI/CD con GitHub Actions
+- **Enfoque:** arquitectura limpia, escalabilidad, mejoras continuas
+
+---
+
+### 📱 Mobile + IA Offline (privacidad primero)
+### 🤖 Dumy — Finanzas personales + Bot offline
+Repositorio: https://github.com/joseph12n/Dumy
+
+Aplicación móvil para centralizar y automatizar la gestión financiera personal sin comprometer la privacidad.
+- **Base:** TypeScript
+- **IA local:** bot offline con enfoque en privacidad (Ollama como línea de trabajo)
+- **Idea clave:** automatización + control total del usuario sobre sus datos
+
+---
+
+### 🧾 SaaS / Multi-tenant
+### ☀️ Solanium — SaaS de facturación multitenant
+Repositorio: https://github.com/joseph12n/solanium
+
+Monorepo para un sistema de facturación **multifacético** y **autogestionable** para distintos tipos de comercios.
+- **Base:** TypeScript
+- **Datos (línea de trabajo):** PostgreSQL (multitenant, escalable)
+- **Objetivo:** modularidad, multi-rubro, listo para crecer por planes/tenants
+
+---
+
+### 🧱 Primer sistema (hecho a mano)
+### 🏘️ Gestión Residencial
+Repositorio: https://github.com/joseph12n/conjuntos_residenciales-main
+
+Mi primer sistema desarrollado “a mano”, clave en mi evolución como developer.
+- **Stack:** PHP + MySQL + JavaScript
+- **Valor:** fundamentos, lógica, y experiencia real construyendo desde cero
+
+---
+
+> Ver todos mis repos: https://github.com/joseph12n?tab=repositories
 
 ---
 
