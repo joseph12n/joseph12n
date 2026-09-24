@@ -1,128 +1,126 @@
-# 👋 ¡Hola! Soy Joseph Varón
-
 <div align="center">
 
-  <!-- Header dinámico -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&duration=2800&pause=800&color=2E97F7&center=true&vCenter=true&width=720&lines=Full+Stack+Developer;ADSO+Student+%40+SENA;MERN+%2B+Mobile;Aprendiendo+Next.js+%2F+TypeScript+%2F+Docker;IA+Local+con+Ollama" alt="Typing SVG" />
+# ¡Qué más! 👋 Soy Joseph Varón
 
-  <!-- Banda de badges (rápida de leer) -->
-  <p>
-    <img alt="Location" src="https://img.shields.io/badge/Bogot%C3%A1%2C%20Colombia-111827?style=for-the-badge&logo=googlemaps&logoColor=white" />
-    <img alt="Focus" src="https://img.shields.io/badge/Focus-Software%20Escalable-111827?style=for-the-badge&logo=vercel&logoColor=white" />
-    <img alt="Learning" src="https://img.shields.io/badge/2026-Learning%20Mode-111827?style=for-the-badge&logo=github&logoColor=white" />
-  </p>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2600&pause=700&color=2E97F7&center=true&vCenter=true&width=760&lines=Full+Stack+Developer;Convierto+caf%C3%A9+en+commits;Spring+Boot+%2B+TypeScript+%2B+React;IA+local%2C+porque+mis+datos+son+m%C3%ADos;Aprendo+m%C3%A1s+r%C3%A1pido+de+lo+que+rompo" alt="Typing SVG" />
 
-  <!-- Stats card superior -->
-  <p>
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=joseph12n&theme=tokyonight" alt="Detailed Stats" />
-  </p>
+<p>
+  <img alt="Bogotá, Colombia" src="https://img.shields.io/badge/Bogot%C3%A1-Colombia-111827?style=for-the-badge&logo=googlemaps&logoColor=white" />
+  <img alt="ADSO @ SENA" src="https://img.shields.io/badge/ADSO-%40%20SENA-111827?style=for-the-badge&logoColor=white" />
+  <img alt="Modo" src="https://img.shields.io/badge/Modo-Construyendo-2E97F7?style=for-the-badge&logo=github&logoColor=white" />
+</p>
 
 </div>
 
 ---
 
-## 🚀 Sobre mí
+## 🧃 La versión corta
 
-Soy un desarrollador de **Bogotá, Colombia**, enfocado en construir software **moderno, mantenible y escalable**. Actualmente curso el tecnólogo en **Análisis y Desarrollo de Software (ADSO)** en el SENA y desarrollo proyectos reales mientras incorporo nuevas tecnologías.
+Dev full stack en **Bogotá** 🇨🇴, estudiante de **ADSO en el SENA** y coleccionista de side projects que sí llegan a algo. Me gusta el software que se entiende sin manual, se mantiene sin drama y no da miedo tocar.
 
-- ☕ **Disciplina:** rutina temprana (entreno cuerpo y luego código).
-- 🧠 **Enfoque 2026:** fortalecer bases y subir el nivel con **TypeScript, Next.js, Docker, PostgreSQL, Redis y CI/CD**.
-- 🤖 **Interés fuerte:** **IA local con Ollama** (privacidad, bots offline y automatización).
+- ☕ **Pipeline diario:** café → código → tests → arreglar lo que rompí en el paso 2.
+- 🧱 **Manía:** prefiero un módulo bien pensado que diez parches con cinta adhesiva.
+- 🤖 **Causa:** IA local con Ollama. Tus datos son tuyos, punto.
+- 🏋️ **Filosofía (heredada del gym):** constancia > motivación.
 
 ---
 
-## 🧭 Stack (Actual + Objetivo 2026)
+## 🧰 Caja de herramientas
 
-> **Nota:** Lo marcado como **Objetivo 2026** son tecnologías en aprendizaje/adopción (incluyendo para KN-Store).
+**Con fluidez:**
 
-### ✅ Actual (en uso)
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react,js,html,css,tailwind,nodejs,express,mongodb,php,mysql,java,git,github,linux,vscode,postman,figma" alt="Current stack" />
+  <img src="https://skillicons.dev/icons?i=java,spring,ts,react,nextjs,js,nodejs,express,mongodb,mysql,php,kotlin,androidstudio,html,css,tailwind,git,github,linux,postman,figma" alt="Stack actual" />
 </p>
 
-### 🎯 Objetivo 2026 (aprendizaje/adopción)
+**En el horno 🔥** (aprendiendo en serio, no de oídas):
+
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=nextjs,ts,docker,postgres,redis,githubactions,nestjs,python" alt="2026 stack" />
+  <img src="https://skillicons.dev/icons?i=docker,postgres,redis,githubactions,nestjs,python,cypress,jest" alt="Aprendiendo" />
 </p>
 
-- **Frontend:** Next.js + TypeScript (mejor DX, SSR/SEO cuando aplique)
-- **Backend:** NestJS (arquitectura por módulos, escalabilidad)
-- **DevOps:** Docker + GitHub Actions (deploys y pipelines reproducibles)
-- **Datos:** PostgreSQL + Redis (consultas sólidas + caching/colas)
-- **IA Local:** Ollama (asistentes offline / automatización sin nube)
+---
+
+## 🛠️ Lo que estoy construyendo
+
+### 🛒 KN-Store — de los pedidos por WhatsApp al e-commerce
+
+La tienda de calzado de la casa ya tiene catálogo, roles, inventario en tiempo real y envíos. Se construye en dos frentes:
+
+- 🟩 **Backend:** [`knstore`](https://github.com/joseph12n/knstore) → Spring Boot + MongoDB.
+- 🟦 **Frontend:** [`KN-StoreJS`](https://github.com/joseph12n/KN-StoreJS) → Next.js (App Router) + React 19, migrado desde MERN.
+- 🧪 **QA:** [`pruebas`](https://github.com/joseph12n/pruebas) → observatorio de calidad (ISO 29119 / IEEE 829) publicado en [GitHub Pages](https://joseph12n.github.io/pruebas/).
+
+### 🤖 Dumy — tus finanzas, tus datos, cero nube
+
+App móvil de finanzas personales **100% offline** (Expo + React Native + SQLite): asistente con 12 skills financieras, OCR on-device para recibos y ni una llamada a un servidor. Sin cuentas, sin telemetría, sin excusas.
+
+→ [`Dumy`](https://github.com/joseph12n/Dumy) · [descargar APK](https://github.com/joseph12n/Dumy/releases/latest)
+
+### 🧾 Solanium — facturación SaaS que se adapta al negocio
+
+Monorepo multitenant donde el software se amolda al cliente y no al revés: pegas un token de activación y la interfaz cambia de rubro, branding y plan sola. Un producto, muchos negocios.
+
+→ [`solanium`](https://github.com/joseph12n/solanium) · Next.js 14 + Tailwind + Framer Motion
+
+### 📱 Calculadora de Insumos — Android pensado para gente mayor
+
+Kotlin + Jetpack Compose + Room + ML Kit. Botones gigantes, cero internet y una cámara que lee el número de una foto… pero siempre pide confirmación mostrando el recorte de tu propia letra. 75 tests unitarios para que nadie tenga que adivinar qué pasó.
+
+→ [`calculadora-insumos`](https://github.com/joseph12n/calculadora-insumos)
+
+### 🧱 Gestión Residencial — donde empezó todo
+
+Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MySQL. Feo por fuera, cariño eterno por dentro.
+
+→ [`conjuntos_residenciales-main`](https://github.com/joseph12n/conjuntos_residenciales-main)
+
+<details>
+<summary>🪄 Más en el taller…</summary>
+
+<br>
+
+- [`qasepy`](https://github.com/joseph12n/qasepy) — importador en Python que carga requerimientos y casos a qase.io sin copy-paste.
+- [`project-yml`](https://github.com/joseph12n/project-yml) — laboratorio de MongoDB + Spring Boot.
+- [`BackendSena`](https://github.com/joseph12n/BackendSena) — ejercicios de CRUD del SENA.
+- [`Java_docs`](https://github.com/joseph12n/Java_docs) — apuntes de Java.
+- [`ambiente104`](https://github.com/joseph12n/ambiente104) — experimentos varios.
+
+</details>
 
 ---
 
-## 🌟 Proyectos (selección)
-
-### ⭐ Principal / Flagship
-### 🏢 KN-Store — E-commerce (Proyecto estudiantil)
-Repositorio: https://github.com/joseph12n/KN-Store
-
-E-commerce orientado a inventario/ventas, diseñado para crecer de forma modular.
-- **Stack actual:** React + Node.js + Express + MongoDB
-- **Objetivo 2026 (en adopción para el proyecto):** TypeScript, Next.js, Docker, PostgreSQL, Redis, CI/CD con GitHub Actions
-- **Enfoque:** arquitectura limpia, escalabilidad, mejoras continuas
-
----
-
-### 📱 Mobile + IA Offline (privacidad primero)
-### 🤖 Dumy — Finanzas personales + Bot offline
-Repositorio: https://github.com/joseph12n/Dumy
-
-Aplicación móvil para centralizar y automatizar la gestión financiera personal sin comprometer la privacidad.
-- **Base:** TypeScript
-- **IA local:** bot offline con enfoque en privacidad (Ollama como línea de trabajo)
-- **Idea clave:** automatización + control total del usuario sobre sus datos
-
----
-
-### 🧾 SaaS / Multi-tenant
-### ☀️ Solanium — SaaS de facturación multitenant
-Repositorio: https://github.com/joseph12n/solanium
-
-Monorepo para un sistema de facturación **multifacético** y **autogestionable** para distintos tipos de comercios.
-- **Base:** TypeScript
-- **Datos (línea de trabajo):** PostgreSQL (multitenant, escalable)
-- **Objetivo:** modularidad, multi-rubro, listo para crecer por planes/tenants
-
----
-
-### 🧱 Primer sistema (hecho a mano)
-### 🏘️ Gestión Residencial
-Repositorio: https://github.com/joseph12n/conjuntos_residenciales-main
-
-Mi primer sistema desarrollado “a mano”, clave en mi evolución como developer.
-- **Stack:** PHP + MySQL + JavaScript
-- **Valor:** fundamentos, lógica, y experiencia real construyendo desde cero
-
----
-
-> Ver todos mis repos: https://github.com/joseph12n?tab=repositories
-
----
-
-## 📊 Estadísticas de Actividad
+## 📊 En números
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=joseph12n&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=joseph12n&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=joseph12n&theme=tokyonight" alt="Resumen de GitHub" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=joseph12n&theme=tokyonight" alt="Lenguaje con más commits" />
+  <img src="https://streak-stats.demolab.com?user=joseph12n&theme=tokyonight&hide_border=true" alt="Racha de contribuciones" />
+
 </div>
 
-### 🐍 Contribuciones en movimiento
+### 🐍 La serpiente que se come mis contribuciones
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/joseph12n/joseph12n/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/joseph12n/joseph12n/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/joseph12n/joseph12n/output/github-contribution-grid-snake.svg" />
+    <img alt="Serpiente comiendo contribuciones" src="https://raw.githubusercontent.com/joseph12n/joseph12n/output/github-contribution-grid-snake.svg" />
+  </picture>
 </p>
 
 ---
 
-## 📫 Conecta conmigo
+## 📫 ¿Hablamos?
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joseph-varon)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josephvaron45@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-2E97F7?style=for-the-badge&logo=react&logoColor=white)](https://github.com/joseph12n)
+[![Repos](https://img.shields.io/badge/Ver%20todos%20mis%20repos-2E97F7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joseph12n?tab=repositories)
+
+**Si algo de aquí te sirve, te inspira o te da curiosidad: escríbeme. Respondo más rápido que un hot reload.**
 
 </div>
 
