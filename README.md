@@ -16,71 +16,93 @@
 
 ## About
 
-Full stack developer from Bogotá, Colombia, and **ADSO** student at **SENA**. I like building complete projects — from the database to the interface — and learning by doing: most of what I know lives in the repositories below.
+Full stack developer from **Bogotá, Colombia**, and **ADSO** student at **SENA**. I like building complete projects — from the database to the interface — and learning by doing: most of what I know lives in the repositories below.
 
-I work with **Java and Spring Boot** on the backend, **React, Next.js and TypeScript** on the frontend, and mobile apps. Lately I've been exploring **agentic AI**: coding agents, MCP servers and local models.
+My daily work is **Java + Spring Boot** on the backend and **React, Next.js and TypeScript** on the frontend, plus mobile apps when the project calls for it. I also run a local-first setup for **agentic AI**: coding agents, MCP servers and self-hosted assistants.
 
-- **Currently building:** KN-Store, Dumy and Solanium.
+- **Building:** KN-Store, Dumy and Solanium.
 - **Learning:** Docker, PostgreSQL, Redis and CI/CD.
 - **Open to:** collaborating on projects and learning from others.
 
 ---
 
-## Tech Stack
+## Stack
 
-**Core:**
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,spring,typescript,react,nextjs,javascript,nodejs,expressjs,mongodb,mysql,php,kotlin,androidstudio,html,css,tailwindcss,git,github,linux,postman,figma" alt="Core stack" />
-</p>
-
-**Learning:**
+**Languages**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=docker,postgresql,redis,githubactions,nestjs,python,cypress,jest" alt="Learning" />
+  <img src="https://skillicons.dev/icons?i=java,kotlin,typescript,javascript,php,python,html,css" alt="Languages" />
 </p>
 
-**Tools & platforms:** Fedora · AWS · VS Code · Maven · Gradle · Nginx · Notion · Postman · Figma
+**Frameworks & Libraries**
 
-**Testing & QA:** JUnit 5 · Jest · Vitest · Cypress · pytest · JMeter · Lighthouse · Qase.io
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=spring,nodejs,expressjs,nestjs,react,nextjs,tailwindcss" alt="Frameworks and libraries" />
+</p>
 
-**AI & agentic:** OpenCode · Hermes · MCP (Model Context Protocol) · Ollama
+**Databases**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis,sqlite" alt="Databases" />
+</p>
+
+**DevOps & Systems**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=docker,githubactions,git,github,linux,maven,gradle,nginx,aws" alt="DevOps and systems" />
+</p>
+
+**Tools**
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,postman,notion,figma" alt="Tools" />
+</p>
+
+**Mobile**
+
+<p align="left">
+  <img alt="Android" src="https://img.shields.io/badge/Android-111827?style=for-the-badge&logo=android&logoColor=white" />
+  <img alt="Jetpack Compose" src="https://img.shields.io/badge/Jetpack%20Compose-111827?style=for-the-badge&logo=jetpackcompose&logoColor=white" />
+  <img alt="Expo" src="https://img.shields.io/badge/Expo-111827?style=for-the-badge&logo=expo&logoColor=white" />
+</p>
+
+**Testing & QA**
+
+<p align="left">
+  <img alt="JUnit 5" src="https://img.shields.io/badge/JUnit%205-111827?style=for-the-badge&logo=junit5&logoColor=white" />
+  <img alt="Jest" src="https://img.shields.io/badge/Jest-111827?style=for-the-badge&logo=jest&logoColor=white" />
+  <img alt="Vitest" src="https://img.shields.io/badge/Vitest-111827?style=for-the-badge&logo=vitest&logoColor=white" />
+  <img alt="Cypress" src="https://img.shields.io/badge/Cypress-111827?style=for-the-badge&logo=cypress&logoColor=white" />
+  <img alt="pytest" src="https://img.shields.io/badge/pytest-111827?style=for-the-badge&logo=pytest&logoColor=white" />
+  <img alt="JMeter" src="https://img.shields.io/badge/JMeter-111827?style=for-the-badge&logo=apachejmeter&logoColor=white" />
+  <img alt="Lighthouse" src="https://img.shields.io/badge/Lighthouse-111827?style=for-the-badge&logo=lighthouse&logoColor=white" />
+  <img alt="Qase" src="https://img.shields.io/badge/Qase-111827?style=for-the-badge&logo=qase&logoColor=white" />
+</p>
+
+**AI & Agentic**
+
+<p align="left">
+  <img alt="OpenCode" src="https://img.shields.io/badge/OpenCode-111827?style=for-the-badge&logo=opencode&logoColor=white" />
+  <img alt="Hermes Agent" src="https://img.shields.io/badge/%E2%98%A4%20Hermes%20Agent-111827?style=for-the-badge&logoColor=white" />
+  <img alt="Model Context Protocol" src="https://img.shields.io/badge/MCP-111827?style=for-the-badge&logo=modelcontextprotocol&logoColor=white" />
+  <img alt="Ollama" src="https://img.shields.io/badge/Ollama-111827?style=for-the-badge&logo=ollama&logoColor=white" />
+</p>
+
+**Daily driver**
+
+<p align="left">
+  <img alt="Fedora" src="https://img.shields.io/badge/Fedora-111827?style=for-the-badge&logo=fedora&logoColor=white" />
+</p>
 
 ---
 
 ## Projects
 
-### 🛒 KN-Store — E-commerce
-
-E-commerce for a shoe store, which went from taking orders over WhatsApp to having a catalog, roles, real-time inventory and shipping.
-
-- **Backend:** [`knstore`](https://github.com/joseph12n/knstore) — Spring Boot + MongoDB.
-- **Frontend:** [`KN-StoreJS`](https://github.com/joseph12n/KN-StoreJS) — Next.js + React 19.
-- **QA:** [`pruebas`](https://github.com/joseph12n/pruebas) — test reports published on [GitHub Pages](https://joseph12n.github.io/pruebas/).
-
-### 💰 Dumy — Personal finance, offline
-
-Mobile app (Expo + React Native + SQLite) for managing personal finances without relying on the cloud: a 12-skill financial assistant and on-device OCR for receipts. Everything stays on the device.
-
-→ [`Dumy`](https://github.com/joseph12n/Dumy) · [download APK](https://github.com/joseph12n/Dumy/releases/latest)
-
-### 🧾 Solanium — Multi-tenant billing SaaS
-
-Monorepo where each client activates their account with a token and the UI adapts to their business (industry, branding and plan). Next.js 14 + Tailwind.
-
-→ [`solanium`](https://github.com/joseph12n/solanium)
-
-### 🧮 Lab Supplies Calculator — Android
-
-App for counting lab supplies, designed for older adults: large buttons, no internet, and number reading from a photo with ML Kit. Kotlin + Compose + Room, with 75 unit tests.
-
-→ [`calculadora-insumos`](https://github.com/joseph12n/calculadora-insumos)
-
-### 🏘️ Residential Management
-
-My first hand-built system: reservations for residential complexes in PHP + MySQL. That's where I learned the fundamentals by building from scratch.
-
-→ [`conjuntos_residenciales-main`](https://github.com/joseph12n/conjuntos_residenciales-main)
+- 🛒 **[KN-Store](https://github.com/joseph12n/knstore)** — E-commerce for a shoe store: catalog, roles, real-time inventory and shipping. Backend with Spring Boot + MongoDB, frontend in [KN-StoreJS](https://github.com/joseph12n/KN-StoreJS) (Next.js + React 19), QA reports in [pruebas](https://github.com/joseph12n/pruebas).
+- 💰 **[Dumy](https://github.com/joseph12n/Dumy)** — Offline personal finance app (Expo + React Native + SQLite) with a 12-skill assistant and on-device OCR. Everything stays on the device. [Download the APK](https://github.com/joseph12n/Dumy/releases/latest).
+- 🧾 **[Solanium](https://github.com/joseph12n/solanium)** — Multi-tenant billing SaaS: each client activates their account with a token and the UI adapts to their business. Next.js 14 + Tailwind.
+- 🧮 **[Lab Supplies Calculator](https://github.com/joseph12n/calculadora-insumos)** — Android app for counting lab supplies, designed for older adults: large buttons, no internet, and number reading from a photo with ML Kit. Kotlin + Compose + Room, with 75 unit tests.
+- 🏘️ **[Residential Management](https://github.com/joseph12n/conjuntos_residenciales-main)** — My first hand-built system: reservations for residential complexes. PHP + MySQL.
 
 <details>
 <summary>Other repositories</summary>
@@ -125,7 +147,7 @@ My first hand-built system: reservations for residential complexes in PHP + MySQ
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joseph-varon)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josephvaron45@gmail.com)
-[![Repos](https://img.shields.io/badge/All%20my%20repos-2E97F7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joseph12n?tab=repositories)
+[![All my repos](https://img.shields.io/badge/All%20my%20repos-2E97F7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joseph12n?tab=repositories)
 
 If you want to talk about a project or have a question, feel free to reach out.
 
