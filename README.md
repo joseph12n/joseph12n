@@ -1,39 +1,40 @@
 <div align="center">
 
-# ¡Qué más! 👋 Soy Joseph Varón
+# 👋 Hola, soy Joseph Varón
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2600&pause=700&color=2E97F7&center=true&vCenter=true&width=760&lines=Full+Stack+Developer;Convierto+caf%C3%A9+en+commits;Spring+Boot+%2B+TypeScript+%2B+React;IA+local%2C+porque+mis+datos+son+m%C3%ADos;Aprendo+m%C3%A1s+r%C3%A1pido+de+lo+que+rompo" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=900&color=2E97F7&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;Spring+Boot+%C2%B7+TypeScript+%C2%B7+React;Bogot%C3%A1%2C+Colombia;ADSO+%40+SENA" alt="Typing SVG" />
 
 <p>
   <img alt="Bogotá, Colombia" src="https://img.shields.io/badge/Bogot%C3%A1-Colombia-111827?style=for-the-badge&logo=googlemaps&logoColor=white" />
   <img alt="ADSO @ SENA" src="https://img.shields.io/badge/ADSO-%40%20SENA-111827?style=for-the-badge&logoColor=white" />
-  <img alt="Modo" src="https://img.shields.io/badge/Modo-Construyendo-2E97F7?style=for-the-badge&logo=github&logoColor=white" />
+  <img alt="Full Stack" src="https://img.shields.io/badge/Full%20Stack-Developer-2E97F7?style=for-the-badge&logoColor=white" />
 </p>
 
 </div>
 
 ---
 
-## 🧃 La versión corta
+## Sobre mí
 
-Dev full stack en **Bogotá** 🇨🇴, estudiante de **ADSO en el SENA** y coleccionista de side projects que sí llegan a algo. Me gusta el software que se entiende sin manual, se mantiene sin drama y no da miedo tocar.
+Soy desarrollador full stack de Bogotá y estudio **Análisis y Desarrollo de Software (ADSO)** en el SENA. Me gusta construir proyectos completos, desde la base de datos hasta la interfaz, y aprender haciéndolos: buena parte de lo que sé vive en los repos que hay aquí abajo.
 
-- ☕ **Pipeline diario:** café → código → tests → arreglar lo que rompí en el paso 2.
-- 🧱 **Manía:** prefiero un módulo bien pensado que diez parches con cinta adhesiva.
-- 🤖 **Causa:** IA local con Ollama. Tus datos son tuyos, punto.
-- 🏋️ **Filosofía (heredada del gym):** constancia > motivación.
+Ahora mismo trabajo entre backend con **Java y Spring Boot**, frontend con **React, Next.js y TypeScript**, y apps móviles. También me interesa la **IA local** con Ollama, sobre todo para manejar datos personales sin mandarlos a un servidor.
+
+- **Aprendiendo:** Docker, PostgreSQL, Redis y CI/CD.
+- **Trabajando en:** KN-Store, Dumy y Solanium.
+- **Abierto a:** colaborar en proyectos y seguir aprendiendo de otros.
 
 ---
 
-## 🧰 Caja de herramientas
+## Stack
 
-**Con fluidez:**
+**Tecnologías que uso:**
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=java,spring,ts,react,nextjs,js,nodejs,express,mongodb,mysql,php,kotlin,androidstudio,html,css,tailwind,git,github,linux,postman,figma" alt="Stack actual" />
+  <img src="https://skillicons.dev/icons?i=java,spring,ts,react,nextjs,js,nodejs,express,mongodb,mysql,php,kotlin,androidstudio,html,css,tailwind,git,github,linux,postman,figma" alt="Tecnologías que uso" />
 </p>
 
-**En el horno 🔥** (aprendiendo en serio, no de oídas):
+**Aprendiendo ahora:**
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=docker,postgres,redis,githubactions,nestjs,python,cypress,jest" alt="Aprendiendo" />
@@ -41,47 +42,47 @@ Dev full stack en **Bogotá** 🇨🇴, estudiante de **ADSO en el SENA** y cole
 
 ---
 
-## 🛠️ Lo que estoy construyendo
+## Proyectos
 
-### 🛒 KN-Store — de los pedidos por WhatsApp al e-commerce
+### 🛒 KN-Store — E-commerce
 
-La tienda de calzado de la casa ya tiene catálogo, roles, inventario en tiempo real y envíos. Se construye en dos frentes:
+Proyecto para la tienda de calzado de la casa, que pasó de recibir pedidos por WhatsApp a tener catálogo, roles, inventario en tiempo real y envíos.
 
-- 🟩 **Backend:** [`knstore`](https://github.com/joseph12n/knstore) → Spring Boot + MongoDB.
-- 🟦 **Frontend:** [`KN-StoreJS`](https://github.com/joseph12n/KN-StoreJS) → Next.js (App Router) + React 19, migrado desde MERN.
-- 🧪 **QA:** [`pruebas`](https://github.com/joseph12n/pruebas) → observatorio de calidad (ISO 29119 / IEEE 829) publicado en [GitHub Pages](https://joseph12n.github.io/pruebas/).
+- **Backend:** [`knstore`](https://github.com/joseph12n/knstore) con Spring Boot + MongoDB.
+- **Frontend:** [`KN-StoreJS`](https://github.com/joseph12n/KN-StoreJS) con Next.js + React 19.
+- **Pruebas:** [`pruebas`](https://github.com/joseph12n/pruebas) con los reportes de QA publicados en [GitHub Pages](https://joseph12n.github.io/pruebas/).
 
-### 🤖 Dumy — tus finanzas, tus datos, cero nube
+### 💰 Dumy — Finanzas personales offline
 
-App móvil de finanzas personales **100% offline** (Expo + React Native + SQLite): asistente con 12 skills financieras, OCR on-device para recibos y ni una llamada a un servidor. Sin cuentas, sin telemetría, sin excusas.
+App móvil (Expo + React Native + SQLite) para llevar las finanzas sin depender de la nube: incluye un asistente con 12 skills financieras y OCR on-device para leer recibos. Todo se queda en el dispositivo.
 
 → [`Dumy`](https://github.com/joseph12n/Dumy) · [descargar APK](https://github.com/joseph12n/Dumy/releases/latest)
 
-### 🧾 Solanium — facturación SaaS que se adapta al negocio
+### 🧾 Solanium — Facturación SaaS multitenant
 
-Monorepo multitenant donde el software se amolda al cliente y no al revés: pegas un token de activación y la interfaz cambia de rubro, branding y plan sola. Un producto, muchos negocios.
+Monorepo donde cada cliente activa su cuenta con un token y la interfaz se adapta a su negocio (rubro, branding y plan). Next.js 14 + Tailwind.
 
-→ [`solanium`](https://github.com/joseph12n/solanium) · Next.js 14 + Tailwind + Framer Motion
+→ [`solanium`](https://github.com/joseph12n/solanium)
 
-### 📱 Calculadora de Insumos — Android pensado para gente mayor
+### 🧮 Calculadora de Insumos — Android
 
-Kotlin + Jetpack Compose + Room + ML Kit. Botones gigantes, cero internet y una cámara que lee el número de una foto… pero siempre pide confirmación mostrando el recorte de tu propia letra. 75 tests unitarios para que nadie tenga que adivinar qué pasó.
+App para contar insumos de laboratorio, pensada para personas mayores: botones grandes, sin internet y lectura de números desde una foto con ML Kit. Kotlin + Compose + Room, con 75 tests unitarios.
 
 → [`calculadora-insumos`](https://github.com/joseph12n/calculadora-insumos)
 
-### 🧱 Gestión Residencial — donde empezó todo
+### 🏘️ Gestión Residencial
 
-Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MySQL. Feo por fuera, cariño eterno por dentro.
+Mi primer sistema hecho a mano: reservas para conjuntos residenciales en PHP + MySQL. Ahí aprendí las bases construyendo desde cero.
 
 → [`conjuntos_residenciales-main`](https://github.com/joseph12n/conjuntos_residenciales-main)
 
 <details>
-<summary>🪄 Más en el taller…</summary>
+<summary>Otros repos</summary>
 
 <br>
 
-- [`qasepy`](https://github.com/joseph12n/qasepy) — importador en Python que carga requerimientos y casos a qase.io sin copy-paste.
-- [`project-yml`](https://github.com/joseph12n/project-yml) — laboratorio de MongoDB + Spring Boot.
+- [`qasepy`](https://github.com/joseph12n/qasepy) — script en Python para cargar requerimientos y casos de prueba a qase.io.
+- [`project-yml`](https://github.com/joseph12n/project-yml) — ejercicio de MongoDB con Spring Boot.
 - [`BackendSena`](https://github.com/joseph12n/BackendSena) — ejercicios de CRUD del SENA.
 - [`Java_docs`](https://github.com/joseph12n/Java_docs) — apuntes de Java.
 - [`ambiente104`](https://github.com/joseph12n/ambiente104) — experimentos varios.
@@ -90,7 +91,7 @@ Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MyS
 
 ---
 
-## 📊 En números
+## GitHub en números
 
 <div align="center">
 
@@ -100,7 +101,7 @@ Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MyS
 
 </div>
 
-### 🐍 La serpiente que se come mis contribuciones
+## Contribuciones
 
 <p align="center">
   <picture>
@@ -112,7 +113,7 @@ Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MyS
 
 ---
 
-## 📫 ¿Hablamos?
+## Contacto
 
 <div align="center">
 
@@ -120,7 +121,7 @@ Mi primer sistema hecho a mano: reservas de conjuntos residenciales en PHP + MyS
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:josephvaron45@gmail.com)
 [![Repos](https://img.shields.io/badge/Ver%20todos%20mis%20repos-2E97F7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/joseph12n?tab=repositories)
 
-**Si algo de aquí te sirve, te inspira o te da curiosidad: escríbeme. Respondo más rápido que un hot reload.**
+Si quieres hablar de algún proyecto o tienes una pregunta, escríbeme y te respondo.
 
 </div>
 
