@@ -159,10 +159,18 @@ def tile_from_simpleicons(svg: str) -> str:
 
 
 def normalise(svg: str) -> str:
-    """One shape of output: sized, so the README does not need width attributes."""
+    """Pin the intrinsic size to TILE on every icon.
+
+    Stripping width/height instead looks harmless but is not: with no intrinsic
+    size an SVG inside <img> is laid out by the surrounding layout, and GitHub's
+    readme column is wide enough to blow a 256-unit viewBox up to several
+    hundred pixels. Pinning the size means the README needs no width attributes
+    and the icons stay 48px on every screen.
+    """
     body = svg if svg.lstrip().startswith("<svg") else svg[svg.index("<svg"):]
     body = re.sub(r'\swidth="[^"]*"', "", body, count=1)
     body = re.sub(r'\sheight="[^"]*"', "", body, count=1)
+    body = body.replace("<svg", f'<svg width="{TILE}" height="{TILE}"', 1)
     return body
 
 
