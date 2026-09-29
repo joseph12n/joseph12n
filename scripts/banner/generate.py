@@ -95,7 +95,7 @@ YAML_ROWS = [
     (1, "mobile", "Android · Jetpack Compose · Expo"),
     (1, "data", "MongoDB · PostgreSQL · MySQL · Redis"),
     (1, "qa", "JUnit · Vitest · Cypress · Qase · JMeter"),
-    (1, "ai", "Agentic coding · MCP · Ollama"),
+    (1, "ai", "MCP · Ollama · OpenCode"),
     (1, "cloud", "AWS · Azure"),
     (0, "contact", ""),
     (1, "linkedin", "/in/joseph-varon"),

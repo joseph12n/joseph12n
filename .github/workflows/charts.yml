@@ -44,8 +44,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          # The title must match the committed SVG byte for byte, or the nightly
+          # run rewrites it and commit_radars.sh commits a diff every time.
           python scripts/radar.py --github joseph12n -o assets/radar-langs \
-            --limit 6 --values --title "joseph12n · lenguaje mix"
+            --limit 6 --values --title "joseph12n · language mix"
 
       - name: Publicar los cambios
         uses: peter-evans/create-or-update-comment@v4
