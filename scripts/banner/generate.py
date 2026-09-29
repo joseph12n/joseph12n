@@ -96,6 +96,7 @@ YAML_ROWS = [
     (1, "data", "MongoDB · PostgreSQL · MySQL · Redis"),
     (1, "qa", "JUnit · Vitest · Cypress · Qase · JMeter"),
     (1, "ai", "Agentic coding · MCP · Ollama"),
+    (1, "cloud", "AWS · Azure"),
     (0, "contact", ""),
     (1, "linkedin", "/in/joseph-varon"),
     (1, "github", "joseph12n"),
@@ -559,7 +560,12 @@ def render_svg(
         ]
     )
 
-    row_y = 148.0
+    # Lay the rows out between the panel's top padding and the status divider.
+    # Fixed spacing silently overflows as soon as a row is added: 19 rows at the
+    # old 21.5 step put the last line at y=535, underneath the vim status bar.
+    top_y, bottom_y = 148.0, 512.0
+    step = (bottom_y - top_y) / max(len(YAML_ROWS) - 1, 1)
+    row_y = top_y
     for idx, (indent, key, value) in enumerate(YAML_ROWS, 1):
         line_num = f"{idx:2d}"
         if indent == 0:
@@ -582,7 +588,7 @@ def render_svg(
                 f"{content}</text>",
             ]
         )
-        row_y += 21.5
+        row_y += step
 
     # Vim status line at bottom of panel
     parts.extend(
