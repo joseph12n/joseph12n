@@ -77,7 +77,7 @@
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top"><code>├─ ☁ mobile_apps:</code><br><br>
+      <td width="50%" valign="top"><code>├─ ▸ mobile_apps:</code><br><br>
         <img src="assets/icons/android.svg" alt="Android">
         <img src="assets/icons/jetpack-compose.svg" alt="Jetpack Compose">
         <img src="assets/icons/expo.svg" alt="Expo"><br>
@@ -91,12 +91,16 @@
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top"><code>╰─ ⛁ devops_platform:</code><br><br>
+      <td width="50%" valign="top"><code>├─ ⛁ devops_platform:</code><br><br>
         <img src="assets/icons/docker.svg" alt="Docker">
         <img src="assets/icons/github-actions.svg" alt="GitHub Actions"><br>
         <sub><code>Docker · GitHub Actions</code></sub>
       </td>
-      <td width="50%" valign="top"></td>
+      <td width="50%" valign="top"><code>╰─ ☁ cloud_platform:</code><br><br>
+        <img src="assets/icons/aws.svg" alt="AWS">
+        <img src="assets/icons/azure.svg" alt="Azure"><br>
+        <sub><code>AWS · Azure</code></sub>
+      </td>
     </tr>
   </tbody>
   <tfoot>

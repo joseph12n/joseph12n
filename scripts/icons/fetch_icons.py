@@ -73,7 +73,7 @@ STACK: list[tuple[str, str, list[tuple[str, tuple[str, ...]]]]] = [
         ("pytest",      ("simple:pytest", "skill:pytest")),
         ("Qase",        ("simple:qase", "skill:qase")),
     ]),
-    ("mobile_apps", "☁", [
+    ("mobile_apps", "▸", [
         ("Android",     ("simple:android", "skill:android")),
         ("Jetpack Compose", ("simple:jetpackcompose", "skill:jetpackcompose")),
         ("Expo",        ("simple:expo", "skill:expo")),
@@ -86,6 +86,12 @@ STACK: list[tuple[str, str, list[tuple[str, tuple[str, ...]]]]] = [
     ("devops_platform", "⛁", [
         ("Docker",         ("skill:docker", "simple:docker")),
         ("GitHub Actions", ("simple:githubactions", "skill:githubactions")),
+    ]),
+    # AWS and Azure are skillicons-only: Simple Icons dropped both brands over
+    # trademark, so those slugs now 404. Keep skill first in the fallback order.
+    ("cloud_platform", "☁", [
+        ("AWS",   ("skill:aws", "simple:amazonaws")),
+        ("Azure", ("skill:azure", "simple:microsoftazure")),
     ]),
 ]
 
