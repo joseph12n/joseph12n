@@ -42,32 +42,53 @@
   <tbody>
     <tr>
       <td width="50%" valign="top"><code>├─ ⚙ backend_java:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=java,kotlin,spring,maven,gradle" alt="Java, Kotlin, Spring Boot, Maven y Gradle"><br>
+        <img src="assets/icons/java.svg" alt="Java">
+        <img src="assets/icons/kotlin.svg" alt="Kotlin">
+        <img src="assets/icons/spring-boot.svg" alt="Spring Boot">
+        <img src="assets/icons/maven.svg" alt="Maven">
+        <img src="assets/icons/gradle.svg" alt="Gradle"><br>
         <sub><code>Java · Kotlin · Spring Boot · Maven · Gradle</code></sub>
       </td>
       <td width="50%" valign="top"><code>├─ ⚛ frontend_web:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=react,nextjs,typescript,javascript,tailwindcss,nodejs" alt="React, Next.js, TypeScript, Tailwind y Node"><br>
+        <img src="assets/icons/react.svg" alt="React">
+        <img src="assets/icons/next-js.svg" alt="Next.js">
+        <img src="assets/icons/typescript.svg" alt="TypeScript">
+        <img src="assets/icons/tailwind.svg" alt="Tailwind">
+        <img src="assets/icons/node-js.svg" alt="Node.js"><br>
         <sub><code>React · Next.js · TypeScript · Tailwind · Node.js</code></sub>
       </td>
     </tr>
     <tr>
-      <td valign="top"><code>├─ ▣ data_storage:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=mongodb,postgresql,mysql,redis,sqlite" alt="MongoDB, PostgreSQL, MySQL, Redis y SQLite"><br>
+      <td width="50%" valign="top"><code>├─ ▣ data_storage:</code><br><br>
+        <img src="assets/icons/mongodb.svg" alt="MongoDB">
+        <img src="assets/icons/postgresql.svg" alt="PostgreSQL">
+        <img src="assets/icons/mysql.svg" alt="MySQL">
+        <img src="assets/icons/redis.svg" alt="Redis">
+        <img src="assets/icons/sqlite.svg" alt="SQLite"><br>
         <sub><code>MongoDB · PostgreSQL · MySQL · Redis · SQLite</code></sub>
       </td>
-      <td valign="top"><code>├─ ◉ qa_quality:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=junit5,vitest,cypress,pytest,apachejmeter,qase" alt="JUnit, Vitest, Cypress, pytest, JMeter y Qase"><br>
-        <sub><code>JUnit · Vitest · Cypress · pytest · JMeter · Qase</code></sub>
+      <td width="50%" valign="top"><code>├─ ◉ qa_quality:</code><br><br>
+        <img src="assets/icons/junit-5.svg" alt="JUnit 5">
+        <img src="assets/icons/vitest.svg" alt="Vitest">
+        <img src="assets/icons/cypress.svg" alt="Cypress">
+        <img src="assets/icons/pytest.svg" alt="pytest">
+        <img src="assets/icons/qase.svg" alt="Qase"><br>
+        <sub><code>JUnit 5 · Vitest · Cypress · pytest · Qase</code></sub>
       </td>
     </tr>
     <tr>
-      <td valign="top"><code>├─ ☁ mobile_apps:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=android,jetpackcompose,expo" alt="Android, Jetpack Compose y Expo"><br>
-        <sub><code>Android · Jetpack Compose · Expo · React Native</code></sub>
+      <td width="50%" valign="top"><code>├─ ☁ mobile_apps:</code><br><br>
+        <img src="assets/icons/android.svg" alt="Android">
+        <img src="assets/icons/jetpack-compose.svg" alt="Jetpack Compose">
+        <img src="assets/icons/expo.svg" alt="Expo"><br>
+        <sub><code>Android · Jetpack Compose · Expo</code></sub>
       </td>
-      <td valign="top"><code>╰─ ✦ ai_agentic:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=modelcontextprotocol,ollama,opencode,docker" alt="MCP, Ollama, OpenCode y Docker"><br>
-        <sub><code>Model Context Protocol · Ollama · OpenCode · Docker</code></sub>
+      <td width="50%" valign="top"><code>╰─ ✦ ai_agentic:</code><br><br>
+        <img src="assets/icons/mcp.svg" alt="MCP">
+        <img src="assets/icons/ollama.svg" alt="Ollama">
+        <img src="assets/icons/opencode.svg" alt="OpenCode">
+        <img src="assets/icons/docker.svg" alt="Docker"><br>
+        <sub><code>MCP · Ollama · OpenCode · Docker</code></sub>
       </td>
     </tr>
   </tbody>
@@ -176,6 +197,8 @@ Si quieres hablar de un proyecto o tienes una duda, escríbeme sin problema.
 
 <div align="center">
   <sub>
-    Construido desde <code>assets/</code> y <code>scripts/</code> · gopher © Renee French (CC BY 3.0)
+    Construido desde <code>assets/</code> y <code>scripts/</code> · iconos de marca:
+    <a href="https://simpleicons.org">Simple Icons</a> (CC0) y SkillIcons ·
+    gopher © Renee French (CC BY 3.0)
   </sub>
 </div>
