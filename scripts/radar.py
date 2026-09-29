@@ -72,6 +72,86 @@ def from_json(path: Path):
     return d.get("title", "Skill Radar"), axes
 
 
+def write_json(path: Path, title: str, axes, comment: str | None) -> None:
+    """Write skills.json back in the same shape it was read in."""
+    payload = {"title": title}
+    if comment:
+        payload["_comment"] = comment
+    payload["axes"] = [{"label": label, "value": value} for label, value in axes]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+                    encoding="utf-8")
+
+
+def prompt_number(current: float) -> float:
+    """Ask for a 0-100 value. Enter keeps what is already there."""
+    while True:
+        try:
+            answer = input(f"  [{current:g}] > ").strip()
+        except EOFError:  # piped or non-interactive
+            return current
+        if not answer:
+            return current
+        try:
+            value = float(answer)
+        except ValueError:
+            print("    eso no es un numero")
+            continue
+        if not 0 <= value <= 100:
+            print("    tiene que estar entre 0 y 100")
+            continue
+        return value
+
+
+def rate(path: Path, axis_labels: str | None, render_to: Path | None) -> None:
+    """Walk the axes and collect self-assessed values.
+
+    There is no public signal for proficiency — the API can tell you how many
+    commits exist, not what they are worth — so these numbers are a judgement
+    call and they stay yours to make. What this buys is that they land in
+    skills.json in the right shape, ready for the workflow to draw.
+    """
+    existing = {"title": "Skill Radar", "axes": [], "_comment": None}
+    if path.exists():
+        raw = json.loads(path.read_text(encoding="utf-8"))
+        existing = {"title": raw.get("title", "Skill Radar"),
+                    "axes": [(a["label"], float(a["value"])) for a in raw["axes"]],
+                    "_comment": raw.get("_comment")}
+
+    if axis_labels:
+        labels = [s.strip() for s in axis_labels.split(",") if s.strip()]
+        previous = dict(existing["axes"])
+        # Keep the old value when a label survives the rename, start at 50 for
+        # genuinely new axes so they are visibly unrated rather than a fake zero.
+        axes = [(label, previous.get(label, 50.0)) for label in labels]
+    else:
+        axes = list(existing["axes"])
+
+    if not axes:
+        raise SystemExit(
+            "no hay ejes que calificar: pasa --axes \"Uno,Dos,Tres\" "
+            "para definir el juego de ejes primero"
+        )
+
+    print(f"\n  {existing['title']} — {len(axes)} ejes, valores de 0 a 100")
+    print("  Enter deja el valor actual.\n")
+    rated = [(label, prompt_number(value)) for label, value in axes]
+
+    write_json(path, existing["title"], rated, existing["_comment"])
+    print(f"\n  escrito {path}")
+    for label, value in rated:
+        bar = "#" * int(round(value / 5))
+        print(f"    {label:<24} {bar:<20} {value:g}")
+
+    if render_to:
+        for theme in ("dark", "light"):
+            dest = render_to.with_name(f"{render_to.name}-{theme}.svg")
+            dest.write_text(render(existing["title"], rated, theme,
+                                   440, 4, True, True), encoding="utf-8")
+            print(f"  wrote {dest}")
+
+
+
 def _api(url, token):
     req = urllib.request.Request(url, headers=dict(UA))
     if token:
@@ -293,7 +373,18 @@ def main(argv=None):
     p.add_argument("--values", action="store_true", help="print the number per axis")
     p.add_argument("--no-animate", dest="animate", action="store_false",
                    help="disable the grow-in animation")
+    p.add_argument("--rate", action="store_true",
+                   help="interactively rate the axes and write them back to "
+                        "--data (Enter keeps the current value)")
+    p.add_argument("--axes", metavar="A,B,C",
+                   help="with --rate, replace the axis set, comma separated")
+    p.add_argument("--no-render", dest="render", action="store_false",
+                   help="with --rate, only write the JSON, do not redraw")
     args = p.parse_args(argv)
+
+    if args.rate:
+        rate(args.data, args.axes, None if not args.render else args.out)
+        return
 
     if args.github:
         token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
