@@ -4,27 +4,27 @@
   "axes": [
     {
       "label": "Backend (Java/Spring)",
-      "value": 82
-    },
-    {
-      "label": "Frontend (React/Next)",
-      "value": 80
-    },
-    {
-      "label": "QA & Testing",
-      "value": 78
-    },
-    {
-      "label": "Databases",
-      "value": 70
-    },
-    {
-      "label": "Mobile (Kotlin/Expo)",
       "value": 74
     },
     {
+      "label": "Frontend (React/Next)",
+      "value": 72
+    },
+    {
+      "label": "QA & Testing",
+      "value": 84
+    },
+    {
+      "label": "Databases",
+      "value": 78
+    },
+    {
+      "label": "Mobile (Kotlin/Expo)",
+      "value": 70
+    },
+    {
       "label": "DevOps & CI/CD",
-      "value": 52
+      "value": 74
     }
   ]
 }

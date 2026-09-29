@@ -37,6 +37,17 @@ nombres de los ejes:
 python scripts/radar.py --rate --axes "Backend Java,Frontend React,QA,Data,Mobile,DevOps"
 ```
 
+Ese comando escribe `skills.json` y redibuja los radares. **La tarjeta
+`whoami-ember.svg` tiene los mismos seis números** y hay que redibujarla aparte:
+
+```bash
+python scripts/whoami/render.py
+```
+
+`charts.yml` hace las dos cosas, así que un `git push` con el JSON nuevo basta.
+Localmente, si corrés `--rate` a mano, acordate de correr también el de la
+tarjeta. Antes de que existiera ese script los dos mostraban números distintos.
+
 ## El banner
 
 La foto está en `.gitignore`, así que este paso es local y no corre en CI.
@@ -86,7 +97,21 @@ reporta y sale con código 1.
 
 ## Qué NO se regenera
 
-`assets/whoami-ember.svg` y `assets/banner-*.svg` salen de archivos escritos a
-mano (`generate.py` y el SVG de `whoami`) que no tienen script de entrada.
-Editalos con cuidado y probá en el navegador: la animación es SMIL y los
-rasterizadores estáticos solo muestran el primer frame.
+`assets/banner-*.svg` necesita `assets/source/portrait.jpg`, que está en
+`.gitignore`, así que ese paso nunca corre en CI. El resto del pipeline sí.
+
+`assets/source/anime-src.png` se usa tal cual, sin procesar.
+
+## Un detalle sobre los SVG animados
+
+El banner usa SMIL, y los rasterizadores estáticos (cairosvg, ImageMagick,
+la vista previa de muchos editores) solo muestran el **primer frame**. Para
+ver un frame concreto de la animación:
+
+```bash
+python scripts/banner/still.py          # tu cara
+python scripts/banner/still.py linux    # el hold de Tux
+python scripts/banner/still.py go       # el hold del gopher
+```
+
+Para el movimiento real hay que abrirlo en un navegador.

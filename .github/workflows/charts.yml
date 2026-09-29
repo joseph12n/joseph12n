@@ -34,6 +34,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Tarjeta de terminal (medidores desde el mismo JSON)
+        run: python scripts/whoami/render.py
+
       - name: Radar de habilidades (desde skills.json)
         run: python scripts/radar.py --data assets/skills.json -o assets/radar --values
 
