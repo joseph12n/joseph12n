@@ -82,7 +82,12 @@ def write_json(path: Path, title: str, axes, comment: str | None) -> None:
     payload = {"title": title}
     if comment:
         payload["_comment"] = comment
-    payload["axes"] = [{"label": label, "value": value} for label, value in axes]
+    payload["axes"] = [
+        # Ratings are whole numbers in practice; storing 82.0 makes the diff
+        # against a hand-edited file look like a change when it is not one.
+        {"label": label, "value": int(value) if float(value).is_integer() else value}
+        for label, value in axes
+    ]
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8")

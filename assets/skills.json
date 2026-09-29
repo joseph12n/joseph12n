@@ -4,27 +4,27 @@
   "axes": [
     {
       "label": "Backend (Java/Spring)",
-      "value": 90.0
+      "value": 82
     },
     {
       "label": "Frontend (React/Next)",
-      "value": 82.0
+      "value": 80
     },
     {
       "label": "QA & Testing",
-      "value": 80.0
+      "value": 78
     },
     {
       "label": "Databases",
-      "value": 76.0
+      "value": 70
     },
     {
       "label": "Mobile (Kotlin/Expo)",
-      "value": 72.0
+      "value": 74
     },
     {
       "label": "DevOps & CI/CD",
-      "value": 58.0
+      "value": 52
     }
   ]
 }
