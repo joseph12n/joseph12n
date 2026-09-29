@@ -1,0 +1,56 @@
+name: 📊 Regenerar radares
+
+# The radars are the only generated assets that can be rebuilt here: they come
+# from assets/skills.json and the public GitHub API, with no private input. The
+# banner is NOT rebuilt in CI because its source photo is gitignored — that one
+# is rendered locally and committed.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [assets/skills.json, scripts/radar.py, .github/workflows/charts.yml]
+  schedule:
+    # The language mix is derived from pushed commits, so refresh it nightly.
+    - cron: "23 5 * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: charts
+  cancel-in-progress: true
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Radar de habilidades (desde skills.json)
+        run: python scripts/radar.py --data assets/skills.json -o assets/radar --values
+
+      - name: Radar de lenguajes (desde la API de GitHub)
+        # Private repos are invisible without a token, which flattens the shape.
+        # GITHUB_TOKEN counts here because it is a PAT in classic projects.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/radar.py --github joseph12n -o assets/radar-langs \
+            --limit 6 --values --title "joseph12n · lenguaje mix"
+
+      - name: Publicar los cambios
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          title-token: ${{ github.run_id }}
+          script: .github/workflows/commit_radars.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

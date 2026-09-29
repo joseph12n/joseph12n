@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# The portrait is a photo of a person and is not committed. The banner SVGs are
+# generated from it and ARE committed, so a regeneration happens locally:
+#   python scripts/banner/prepare_portrait.py assets/source/portrait.jpg
+#   python scripts/banner/generate.py
+assets/source/portrait.jpg
+assets/source/portrait.jpeg
+assets/source/portrait.png
+assets/source/portrait-cutout.png
+
+# Scratch output from --preview
+assets/portrait-preview-*.png
+
+# OS
+.DS_Store

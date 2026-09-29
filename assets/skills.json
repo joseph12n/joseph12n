@@ -1,0 +1,30 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Auto-rated, 0-100. Edit these and re-run scripts/radar.py (or push, the Charts workflow redraws them).",
+  "axes": [
+    {
+      "label": "Backend (Java/Spring)",
+      "value": 90
+    },
+    {
+      "label": "Frontend (React/Next)",
+      "value": 82
+    },
+    {
+      "label": "QA & Testing",
+      "value": 80
+    },
+    {
+      "label": "Databases",
+      "value": 76
+    },
+    {
+      "label": "Mobile (Kotlin/Expo)",
+      "value": 72
+    },
+    {
+      "label": "DevOps & CI/CD",
+      "value": 58
+    }
+  ]
+}
