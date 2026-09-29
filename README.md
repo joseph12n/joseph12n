@@ -11,12 +11,12 @@
 <br>
 
 <a href="https://github.com/joseph12n">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=24&amp;duration=2800&amp;pause=900&amp;color=7DCFFF&amp;center=true&amp;vCenter=true&amp;width=820&amp;lines=Full+Stack+Developer+%E2%80%94+Java+%2B+Spring+%C2%B7+TypeScript+%2B+React;Android+%2B+Kotlin+%C2%B7+Bogot%C3%A1%2C+Colombia;ADSO+%40+SENA+%E2%80%94+construyendo+y+enviando" alt="Joseph Varón — Full Stack Developer">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=24&amp;duration=2800&amp;pause=900&amp;color=FF8A2B&amp;center=true&amp;vCenter=true&amp;width=820&amp;lines=Full+Stack+Developer+%E2%80%94+Java+%2B+Spring+%C2%B7+TypeScript+%2B+React;Android+%2B+Kotlin+%C2%B7+Bogot%C3%A1%2C+Colombia;ADSO+%40+SENA+%E2%80%94+construyendo+y+enviando" alt="Joseph Varón — Full Stack Developer">
 </a>
 
 <p>
-  <img src="https://komarev.com/ghpvc/?username=joseph12n&amp;style=flat&amp;color=7DCFFF&amp;label=profile+views" alt="profile views">
-  <img src="https://img.shields.io/badge/ADSO-%40%20SENA-16161e?style=for-the-badge&amp;logo=sena&amp;logoColor=7DCFFF" alt="ADSO at SENA">
+  <img src="https://komarev.com/ghpvc/?username=joseph12n&amp;style=flat&amp;color=FF8A2B&amp;label=profile+views" alt="profile views">
+  <img src="https://img.shields.io/badge/ADSO-%40%20SENA-160C05?style=for-the-badge&amp;logo=sena&amp;logoColor=FFC24A" alt="ADSO at SENA">
 </p>
 
 </div>
@@ -26,14 +26,14 @@
 ## `$ whoami`
 
 <p align="center">
-  <img src="assets/whoami-tokyonight.svg" width="900" alt="Terminal card with Joseph's profile, location, mission and skill meters">
+  <img src="assets/whoami-ember.svg" width="900" alt="Terminal card with Joseph's profile, location, mission and skill meters">
 </p>
 
 ---
 
 ## `$ cat tech-stack.yaml`
 
-<table border="1" cellpadding="14" bgcolor="#16161e">
+<table border="1" cellpadding="14" bgcolor="#160C05">
   <thead>
     <tr>
       <th colspan="2" align="left"><code>joseph12n:~$ cat tech-stack.yaml</code></th>
@@ -134,9 +134,9 @@
 
 <div align="center">
 
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=joseph12n&theme=tokyonight" alt="Resumen del perfil">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=joseph12n&theme=tokyonight" alt="Lenguaje más usado">
-  <img src="https://streak-stats.demolab.com?user=joseph12n&theme=tokyonight&hide_border=true" alt="Racha de contribuciones">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=joseph12n&theme=dark" alt="Resumen del perfil">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=joseph12n&theme=dark" alt="Lenguaje más usado">
+  <img src="https://streak-stats.demolab.com?user=joseph12n&theme=dark&hide_border=true" alt="Racha de contribuciones">
 
 </div>
 
@@ -157,13 +157,13 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/joseph-varon">
-  <img src="https://img.shields.io/badge/LinkedIn-7AA2F7?style=for-the-badge&amp;logo=linkedin&amp;logoColor=16161e" alt="LinkedIn">
+  <img src="https://img.shields.io/badge/LinkedIn-FF8A2B?style=for-the-badge&amp;logo=linkedin&amp;logoColor=160C05" alt="LinkedIn">
 </a>&nbsp;&nbsp;
 <a href="mailto:josephvaron45@gmail.com">
-  <img src="https://img.shields.io/badge/Email-BB9AF7?style=for-the-badge&amp;logo=gmail&amp;logoColor=16161e" alt="Email">
+  <img src="https://img.shields.io/badge/Email-FF5A14?style=for-the-badge&amp;logo=gmail&amp;logoColor=160C05" alt="Email">
 </a>&nbsp;&nbsp;
 <a href="https://github.com/joseph12n?tab=repositories">
-  <img src="https://img.shields.io/badge/Repos-7DCFFF?style=for-the-badge&amp;logo=github&amp;logoColor=16161e" alt="Repos">
+  <img src="https://img.shields.io/badge/Repos-FFC24A?style=for-the-badge&amp;logo=github&amp;logoColor=160C05" alt="Repos">
 </a>
 
 <br><br>

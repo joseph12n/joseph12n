@@ -33,9 +33,9 @@ ASSETS = ROOT / "assets"
 LOGOS = Path(__file__).resolve().parent / "logos"
 
 W, H = 1180, 610
-INTRO_SECONDS = 3.2
+INTRO_SECONDS = 3.0
 TRANSITION_SECONDS = 1.3
-LOGO_HOLD_SECONDS = 4.0
+HOLD_SECONDS = 3.4
 
 # Particle budget. The reference build runs 900 travellers over 2,400 hold
 # particles and lands around 910 KB per theme. 600/1,600 keeps the same look at
@@ -67,6 +67,20 @@ CROP_X_SHIFT = float(os.environ.get("CROP_X", 0.0))
 GRID_W, GRID_H = 300, 340
 MAX_PORTRAIT_DOTS = 18_000
 
+# Extra frames in the rotation, dithered the same way as the opening portrait.
+# Each entry is (label, path, width-as-fraction-of-the-source, max-dots).
+# These are dithered pictures, not silhouettes: point_path merges their adjacent
+# lit pixels into runs, so a full-frame image costs ~60 KiB instead of ~800 KiB.
+#
+# Two things matter here. The manga panel is 666x378, so 0.50 crops it to the
+# character's head and shoulders at the 300:340 aspect. And its dot budget is
+# unlimited on purpose: a dense dither is the only way the hatching reads as
+# shading instead of noise, while subsampling both thins the picture and splits
+# the horizontal runs, which is what keeps point_path compact.
+EXTRA_PORTRAITS = [
+    ("anime", ROOT / "assets/source/anime-src.png", 0.50, None),
+]
+
 YAML_ROWS = [
     (0, "profile", ""),
     (1, "subject", "Joseph Varón"),
@@ -88,32 +102,33 @@ YAML_ROWS = [
     (1, "location", "Bogotá, Colombia"),
 ]
 
-# Tokyo Night. The portrait is the only thing tinted, so it carries the accent
-# while the chrome stays quiet enough for the particles to read.
+# Ember. The portrait is the only thing tinted, so it carries the accent — a hot
+# orange that reads as flame against the near-black warm background — while the
+# chrome stays in amber so the panel does not compete with the particles.
 THEMES = {
     "dark": {
-        "bg":      "#16161E",   # tokyonight bg
-        "panel":   "#1A1B26",   # tokyonight bg-highlight
-        "panel2":  "#20222F",
-        "line":    "#292E42",   # tokyonight border
-        "muted":   "#565F89",   # tokyonight fg-gutter
-        "text":    "#C0CAF5",   # tokyonight fg
-        "portrait":"#7DCFFF",   # tokyonight cyan-dark
-        "chrome":  "#BB9AF7",   # tokyonight purple
-        "accent":  "#7AA2F7",   # tokyonight blue
-        "shadow":  "#0B0C14",
+        "bg":      "#160C05",   # warm black
+        "panel":   "#20120A",
+        "panel2":  "#2A180D",
+        "line":    "#4A2A15",
+        "muted":   "#A8714F",   # faded ember
+        "text":    "#FFE0BE",   # warm cream
+        "portrait":"#FF8A2B",   # flame orange
+        "chrome":  "#FFC24A",   # amber
+        "accent":  "#FF5A14",   # deep ember
+        "shadow":  "#0A0502",
     },
     "light": {
-        "bg":      "#F6F7FB",
+        "bg":      "#FFF6EC",
         "panel":   "#FFFFFF",
-        "panel2":  "#EDEFF7",
-        "line":    "#D3D8EC",
-        "muted":   "#7A82AC",
-        "text":    "#1A1B26",
-        "portrait":"#2A7FD4",
-        "chrome":  "#7C4DFF",
-        "accent":  "#4079B0",
-        "shadow":  "#B9C0DA",
+        "panel2":  "#FCEEE0",
+        "line":    "#F0D3BC",
+        "muted":   "#A8714F",
+        "text":    "#2A1408",
+        "portrait":"#E2620F",
+        "chrome":  "#B23F08",
+        "accent":  "#8A3D08",
+        "shadow":  "#E9BFA2",
     },
 }
 
@@ -214,17 +229,25 @@ def floyd_steinberg(gray: np.ndarray) -> np.ndarray:
     return out
 
 
-def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
-    """Return sampled x/y banner coordinates from a 300x340 dither grid."""
-    source = Image.open(SOURCE).convert("RGBA")
+def portrait_points(theme: str, rng: np.random.Generator,
+                    source_path: Path | None = None,
+                    width_fraction: float | None = None,
+                    top_fraction: float | None = None,
+                    x_shift: float | None = None,
+                    max_dots: int | None = -1) -> np.ndarray:
+    """Return sampled x/y banner coordinates from a GRID_W x GRID_H dither grid."""
+    source = Image.open(source_path or SOURCE).convert("RGBA")
     # Frame the head instead of the whole photo: most of a selfie is ceiling,
     # wall and furniture, which only adds noise the dither would amplify.
+    crop_w_frac = CROP_WIDTH_FRACTION if width_fraction is None else width_fraction
+    crop_top_frac = CROP_TOP_FRACTION if top_fraction is None else top_fraction
+    shift = CROP_X_SHIFT if x_shift is None else x_shift
     w, h = source.size
-    crop_w = min(int(w * CROP_WIDTH_FRACTION), w)
+    crop_w = min(int(w * crop_w_frac), w)
     crop_h = min(int(crop_w * (GRID_H / GRID_W)), h)
     slack = w - crop_w
-    left = int(round(slack / 2 + CROP_X_SHIFT * slack / 2))
-    top = int(min(max(h * CROP_TOP_FRACTION, 0), h - crop_h))
+    left = int(round(slack / 2 + shift * slack / 2))
+    top = int(min(max(h * crop_top_frac, 0), h - crop_h))
     crop = source.crop((left, top, left + crop_w, top + crop_h)).resize(
         (GRID_W, GRID_H), Image.Resampling.LANCZOS
     )
@@ -263,8 +286,9 @@ def portrait_points(theme: str, rng: np.random.Generator) -> np.ndarray:
     if len(xs) == 0:
         return np.zeros((0, 2), dtype=np.float32)
     points = np.column_stack((74 + xs, 154 + ys)).astype(np.float32)
-    if len(points) > MAX_PORTRAIT_DOTS:
-        points = points[rng.choice(len(points), MAX_PORTRAIT_DOTS, replace=False)]
+    limit = MAX_PORTRAIT_DOTS if max_dots == -1 else max_dots
+    if limit and len(points) > limit:
+        points = points[rng.choice(len(points), limit, replace=False)]
     return points
 
 
@@ -357,26 +381,33 @@ def animate_values(points: list[np.ndarray], index: int) -> str:
 def render_svg(
     theme_name: str,
     portrait: np.ndarray,
-    logo_points: dict[str, np.ndarray],
-    logo_hold_particles: dict[str, np.ndarray],
+    holds: list[tuple[str, np.ndarray, bool]],
     rng: np.random.Generator,
 ) -> str:
+    """Render one theme's banner.
+
+    ``portrait`` is the opening frame. ``holds`` is the rest of the rotation as
+    ``(name, points, is_dither)``: a dithered portrait is drawn with
+    ``point_path`` (adjacent lit pixels merge into runs, ~13x smaller than one
+    path command per pixel), while a logo silhouette keeps independent
+    particles so it stays speckled.
+    """
     t = THEMES[theme_name]
     n = min(TRAVELLER_COUNT, len(portrait))
     source = portrait[rng.choice(len(portrait), n, replace=False)]
     targets: list[np.ndarray] = []
     current = source
-    for name, points in logo_points.items():
+    for _, points, _ in holds:
         current = transport(current, points[:n])
         targets.append(current)
 
-    # Three seconds of portrait, then transitions and full-logo holds. Returning
-    # to the portrait keeps the loop seamless.
-    times = [0.0, 3.0]
+    # Three seconds of portrait, then a transition and a hold on each frame.
+    # Returning to the portrait keeps the loop seamless.
+    times = [0.0, INTRO_SECONDS]
     frames = [source, source]
     for target in targets:
         times.extend((times[-1] + TRANSITION_SECONDS,
-                      times[-1] + TRANSITION_SECONDS + LOGO_HOLD_SECONDS))
+                      times[-1] + TRANSITION_SECONDS + HOLD_SECONDS))
         frames.extend((target, target))
     times.append(times[-1] + TRANSITION_SECONDS)
     frames.append(source)
@@ -471,14 +502,15 @@ def render_svg(
             f'values="{opacity_values}"/></path>'
         )
 
-    # Travellers give the transition its motion. A denser particle cloud takes
-    # over when they arrive, preserving the dithered look during each logo hold.
-    for index, (name, particles) in enumerate(logo_hold_particles.items()):
+    # Travellers give the transition its motion. A denser cloud takes over when
+    # they arrive, preserving the look during each hold.
+    for index, (name, points, is_dither) in enumerate(holds):
+        path = point_path(points) if is_dither else particle_path(points)
         visible = ["0"] * len(frames)
         visible[index * 2 + 2] = ".82"
         visible[index * 2 + 3] = ".82"
         parts.append(
-            f'<path d="{particle_path(particles)}" fill="none" stroke="{t["portrait"]}" '
+            f'<path d="{path}" fill="none" stroke="{t["portrait"]}" '
             'stroke-width="1" opacity="0">'
             f'<animate attributeName="opacity" begin="{INTRO_SECONDS}s" dur="{loop_duration}s" '
             f'repeatCount="indefinite" calcMode="linear" keyTimes="{key_times}" '
@@ -604,10 +636,20 @@ def main() -> None:
 
     themes = [args.theme] if args.theme else list(THEMES)
     portraits: dict[str, np.ndarray] = {}
+    extras: dict[str, np.ndarray] = {}
     for theme in themes:
-        rng = np.random.default_rng(SEED + list(THEMES).index(theme))
+        offset = list(THEMES).index(theme)
+        rng = np.random.default_rng(SEED + offset)
         portraits[theme] = portrait_points(theme, rng)
         print(f"{theme}: {len(portraits[theme]):,} portrait dots")
+        for label, path, width_fraction, max_dots in EXTRA_PORTRAITS:
+            if path.exists():
+                extras[label] = portrait_points(
+                    theme, np.random.default_rng(SEED + 50 + offset),
+                    source_path=path, width_fraction=width_fraction,
+                    top_fraction=0.0, x_shift=0.0, max_dots=max_dots,
+                )
+                print(f"  + {label}: {len(extras[label]):,} dots")
 
     if args.preview:
         for theme in themes:
@@ -619,15 +661,18 @@ def main() -> None:
     logos = make_logos()
     for theme in themes:
         rng = np.random.default_rng(SEED + 100 + list(THEMES).index(theme))
-        sampled = {
-            name: sample_logo_points(image, rng, TRAVELLER_COUNT)
+        # Rotation: the extra dithered portraits right after the real face, then
+        # one dense hold per logo. During each transition the sparse travellers
+        # are what you see; the dense layer fades in on arrival, so a shape looks
+        # like it crystallises rather than being replaced.
+        holds: list[tuple[str, np.ndarray, bool]] = [
+            (label, points, True) for label, points in extras.items()
+        ]
+        holds.extend(
+            (name, sample_logo_points(image, rng, HOLD_PARTICLE_COUNT), False)
             for name, image in logos.items()
-        }
-        hold_particles = {
-            name: sample_logo_points(image, rng, HOLD_PARTICLE_COUNT)
-            for name, image in logos.items()
-        }
-        svg = render_svg(theme, portraits[theme], sampled, hold_particles, rng)
+        )
+        svg = render_svg(theme, portraits[theme], holds, rng)
         output = ASSETS / f"banner-{theme}.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
@@ -636,8 +681,7 @@ def main() -> None:
             f"({byte_size / 1024:.1f} KiB), {len(portraits[theme]):,} portrait dots, "
             f"{TRAVELLER_COUNT} travellers"
         )
-
-    print(f"animation sequence: {', '.join(logos)}")
+        print("  rotation: " + " -> ".join(["self"] + [h[0] for h in holds] + ["self"]))
 
 
 if __name__ == "__main__":

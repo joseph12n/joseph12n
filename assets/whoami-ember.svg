@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Joseph Varón — Full Stack Developer</title>
+  <desc id="desc">Terminal card with Joseph's location, mission, expertise folders and a skill meter panel.</desc>
+
+  <!-- window chrome -->
+  <rect width="960" height="420" rx="16" fill="#160C05"/>
+  <rect x="1" y="1" width="958" height="418" rx="15" fill="none" stroke="#4A2A15"/>
+  <circle cx="34" cy="30" r="6" fill="#f7768e"/>
+  <circle cx="56" cy="30" r="6" fill="#FFC24A"/>
+  <circle cx="78" cy="30" r="6" fill="#E2620F"/>
+  <text x="106" y="36" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">joseph12n@fedora — ~/profile</text>
+  <text x="932" y="36" text-anchor="end" fill="#7A5233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">bash</text>
+  <path d="M20 58H940" stroke="#4A2A15"/>
+
+  <!-- ================= left panel ================= -->
+  <text x="34" y="92" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="17" font-weight="700">❯ whoami</text>
+  <text x="34" y="122" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16">joseph_varon</text>
+  <text x="176" y="122" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16">—</text>
+  <text x="200" y="122" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="16">Full Stack Developer</text>
+  <path d="M34 140H606" stroke="#1f2335"/>
+
+  <text x="34" y="168" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">where:</text>
+  <text x="132" y="168" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Bogotá, Colombia 🇨🇴</text>
+
+  <text x="34" y="196" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">mission:</text>
+  <text x="132" y="196" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">productos completos, de la DB a la interfaz</text>
+
+  <text x="34" y="224" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">learning:</text>
+  <text x="132" y="224" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Docker · PostgreSQL · Redis · CI/CD</text>
+
+  <text x="34" y="266" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="17" font-weight="700">❯ ls expertise/</text>
+
+  <text x="34" y="298" fill="#FF5A14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">backend/</text>
+  <text x="168" y="298" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Java · Spring Boot · Kotlin</text>
+
+  <text x="34" y="322" fill="#FF5A14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">frontend/</text>
+  <text x="168" y="322" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">React · Next.js · TypeScript · Tailwind</text>
+
+  <text x="34" y="346" fill="#FF5A14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">mobile/</text>
+  <text x="168" y="346" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Android · Compose · Expo</text>
+
+  <text x="34" y="370" fill="#FF5A14" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">qa/</text>
+  <text x="168" y="370" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">JUnit · Cypress · Vitest · Qase</text>
+
+  <!-- ================= right panel ================= -->
+  <rect x="626" y="74" width="314" height="312" rx="9" fill="#20120A" stroke="#4A2A15"/>
+  <text x="648" y="102" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13" font-weight="700">SKILL METERS</text>
+  <path d="M648 114H918" stroke="#4A2A15"/>
+
+  <text x="648" y="142" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">backend  </text>
+  <text x="744" y="142" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">██████████</text>
+  <text x="828" y="142" fill="#7A5233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">░░</text>
+  <text x="918" y="142" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">90</text>
+
+  <text x="648" y="170" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">frontend </text>
+  <text x="744" y="170" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">████████░░</text>
+  <text x="918" y="170" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">82</text>
+
+  <text x="648" y="198" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">qa       </text>
+  <text x="744" y="198" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">████████░░</text>
+  <text x="918" y="198" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">80</text>
+
+  <text x="648" y="226" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">data     </text>
+  <text x="744" y="226" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">████████░░</text>
+  <text x="918" y="226" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">76</text>
+
+  <text x="648" y="254" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">mobile   </text>
+  <text x="744" y="254" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">███████░░░</text>
+  <text x="918" y="254" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">72</text>
+
+  <text x="648" y="282" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">devops   </text>
+  <text x="744" y="282" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">██████░░░░</text>
+  <text x="918" y="282" text-anchor="end" fill="#FFE0BE" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">58</text>
+
+  <path d="M648 302H918" stroke="#4A2A15"/>
+  <text x="648" y="330" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">os</text>
+  <text x="700" y="330" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">Fedora</text>
+  <text x="648" y="354" fill="#A8714F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">utc</text>
+  <text x="700" y="354" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">UTC-5</text>
+  <text x="780" y="354" fill="#7A5233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="13">· bogota</text>
+
+  <!-- ================= status line ================= -->
+  <path d="M20 396H940" stroke="#4A2A15"/>
+  <text x="34" y="414" fill="#7A5233" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12">status: construyendo · environment: producción · uptime: aprendiendo a diario</text>
+</svg>

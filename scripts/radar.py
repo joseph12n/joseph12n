@@ -31,30 +31,30 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-# Tokyo Night. Swap these to restyle every chart; both themes must keep enough
-# contrast between grid/spoke/label to stay readable on the GitHub canvas.
+# Ember. Must keep enough contrast between grid/spoke/label to stay readable on
+# the GitHub canvas in both colour schemes.
 THEMES = {
     "dark": {
-        "grid": "#292e42",
-        "spoke": "#1f2335",
-        "label": "#c0caf5",
-        "value": "#7aa2f7",
-        "title": "#c0caf5",
-        "fill": "#bb9af7",
-        "stroke": "#bb9af7",
-        "vertex": "#7dcfff",
-        "bg": "#16161e",
+        "grid": "#4A2A15",
+        "spoke": "#2A180D",
+        "label": "#FFE0BE",
+        "value": "#FF8A2B",
+        "title": "#FFD9A8",
+        "fill": "#FF5A14",
+        "stroke": "#FF7A2B",
+        "vertex": "#FFC24A",
+        "bg": "#160C05",
     },
     "light": {
-        "grid": "#d6dbf0",
-        "spoke": "#e4e8f6",
-        "label": "#1a1b26",
-        "value": "#4079b0",
-        "title": "#1a1b26",
-        "fill": "#7c4dff",
-        "stroke": "#6a3fd6",
-        "vertex": "#2a7fd4",
-        "bg": "#f6f7fb",
+        "grid": "#F0D3BC",
+        "spoke": "#FBEADC",
+        "label": "#2A1408",
+        "value": "#C2410C",
+        "title": "#2A1408",
+        "fill": "#FF7A2B",
+        "stroke": "#E2620F",
+        "vertex": "#B23F08",
+        "bg": "#FFF6EC",
     },
 }
 
