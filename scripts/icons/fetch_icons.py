@@ -82,7 +82,10 @@ STACK: list[tuple[str, str, list[tuple[str, tuple[str, ...]]]]] = [
         ("MCP",         ("simple:modelcontextprotocol", "skill:modelcontextprotocol")),
         ("Ollama",      ("simple:ollama", "skill:ollama")),
         ("OpenCode",    ("simple:opencode", "skill:opencode")),
-        ("Docker",      ("skill:docker", "simple:docker")),
+    ]),
+    ("devops_platform", "⛁", [
+        ("Docker",         ("skill:docker", "simple:docker")),
+        ("GitHub Actions", ("simple:githubactions", "skill:githubactions")),
     ]),
 ]
 

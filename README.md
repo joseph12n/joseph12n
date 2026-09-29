@@ -83,13 +83,20 @@
         <img src="assets/icons/expo.svg" alt="Expo"><br>
         <sub><code>Android · Jetpack Compose · Expo</code></sub>
       </td>
-      <td width="50%" valign="top"><code>╰─ ✦ ai_agentic:</code><br><br>
+      <td width="50%" valign="top"><code>├─ ✦ ai_agentic:</code><br><br>
         <img src="assets/icons/mcp.svg" alt="MCP">
         <img src="assets/icons/ollama.svg" alt="Ollama">
-        <img src="assets/icons/opencode.svg" alt="OpenCode">
-        <img src="assets/icons/docker.svg" alt="Docker"><br>
-        <sub><code>MCP · Ollama · OpenCode · Docker</code></sub>
+        <img src="assets/icons/opencode.svg" alt="OpenCode"><br>
+        <sub><code>MCP · Ollama · OpenCode</code></sub>
       </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top"><code>╰─ ⛁ devops_platform:</code><br><br>
+        <img src="assets/icons/docker.svg" alt="Docker">
+        <img src="assets/icons/github-actions.svg" alt="GitHub Actions"><br>
+        <sub><code>Docker · GitHub Actions</code></sub>
+      </td>
+      <td width="50%" valign="top"></td>
     </tr>
   </tbody>
   <tfoot>
