@@ -60,6 +60,11 @@ THEMES = {
 
 UA = {"User-Agent": "radar.py"}
 
+# Defaults resolve against the repository, not the shell's working directory, so
+# `python scripts/radar.py --rate` behaves the same from the repo root, from
+# ~/.local/bin, or from a cron entry.
+ROOT = Path(__file__).resolve().parents[1]
+
 
 # --------------------------------------------------------------------------- #
 # data sources
@@ -355,10 +360,10 @@ def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     src = p.add_mutually_exclusive_group()
-    src.add_argument("--data", type=Path, default=Path("assets/skills.json"))
+    src.add_argument("--data", type=Path, default=ROOT / "assets/skills.json")
     src.add_argument("--github", metavar="USER",
                      help="build the radar from GitHub language stats instead")
-    p.add_argument("-o", "--out", type=Path, default=Path("assets/radar"),
+    p.add_argument("-o", "--out", type=Path, default=ROOT / "assets/radar",
                    help="output path WITHOUT extension")
     p.add_argument("--title", help="override the chart title ('' for none)")
     p.add_argument("--size", type=int, default=440)
