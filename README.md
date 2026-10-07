@@ -41,13 +41,14 @@
   </thead>
   <tbody>
     <tr>
-      <td width="50%" valign="top"><code>├─ ⚙ backend_java:</code><br><br>
+      <td width="50%" valign="top"><code>├─ ⚙ backend:</code><br><br>
         <img src="assets/icons/java.svg" alt="Java">
         <img src="assets/icons/kotlin.svg" alt="Kotlin">
         <img src="assets/icons/spring-boot.svg" alt="Spring Boot">
         <img src="assets/icons/maven.svg" alt="Maven">
-        <img src="assets/icons/gradle.svg" alt="Gradle"><br>
-        <sub><code>Java · Kotlin · Spring Boot · Maven · Gradle</code></sub>
+        <img src="assets/icons/gradle.svg" alt="Gradle">
+        <img src="assets/icons/go.svg" alt="Go"><br>
+        <sub><code>Java · Kotlin · Spring Boot · Maven · Gradle · Go</code></sub>
       </td>
       <td width="50%" valign="top"><code>├─ ⚛ frontend_web:</code><br><br>
         <img src="assets/icons/react.svg" alt="React">
@@ -134,6 +135,8 @@
 ## `$ ls projects/`
 
 <div align="center">
+
+🍺 **[mitt](https://github.com/joseph12n/mitt)** + 📱 **[mott](https://github.com/joseph12n/mott)** — Punto de venta para bares en dos piezas que trabajan juntas: `mitt` es el hub en Go (catálogo, cuentas por mesa con cobro automático, dashboard del día y API LAN para clientes offline), y `mott` es la app nativa en Kotlin para meseros (mesas, pedidos, cuenta automática, offline-first que sincroniza con el hub). Builds verificados en ambos lados y 66 pruebas unitarias en verde en `mott`.
 
 🛒 **[KN-Store](https://github.com/joseph12n/knstore)** — E-commerce para una zapatería: catálogo, roles, inventario en tiempo real y envíos. Backend en Spring Boot + MongoDB, frontend en [KN-StoreJS](https://github.com/joseph12n/KN-StoreJS) (Next.js + React 19), reportes de QA en [pruebas](https://github.com/joseph12n/pruebas).
 

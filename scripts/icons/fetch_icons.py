@@ -45,12 +45,13 @@ GLYPH = 28  # side of the centred brand mark
 # (category key, tree glyph, [ (label, candidate sources...) ])
 # Each icon lists its fallbacks in order; the first source that validates wins.
 STACK: list[tuple[str, str, list[tuple[str, tuple[str, ...]]]]] = [
-    ("backend_java", "⚙", [
+    ("backend", "⚙", [
         ("Java",        ("skill:java", "simple:java")),
         ("Kotlin",      ("skill:kotlin", "simple:kotlin")),
         ("Spring Boot", ("skill:spring", "simple:springboot")),
         ("Maven",       ("skill:maven", "simple:apachemaven")),
         ("Gradle",      ("skill:gradle", "simple:gradle")),
+        ("Go",          ("skill:go", "simple:go")),
     ]),
     ("frontend_web", "⚛", [
         ("React",       ("skill:react", "simple:react")),

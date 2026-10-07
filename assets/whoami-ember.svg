@@ -26,14 +26,15 @@
   <text x="132" y="224" fill="#FFC24A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Docker · Kubernetes · MongoDB aggregations</text>
 
   <text x="34" y="266" fill="#FF8A2B" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="17" font-weight="700">❯ ls expertise/</text>
-  <text x="34" y="298" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">backend/</text>
-  <text x="168" y="298" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Java · Spring Boot · Kotlin · POO · capas · DTOs</text>
-  <text x="34" y="322" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">frontend/</text>
-  <text x="168" y="322" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">React · Next.js · TypeScript · Tailwind · Vite</text>
-  <text x="34" y="346" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">mobile/</text>
-  <text x="168" y="346" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Android · Compose · Expo · React Native</text>
-  <text x="34" y="370" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">qa/</text>
-  <text x="168" y="370" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">JUnit · Selenium · Cypress · pytest · JMeter · Qase · ZenHub</text>
+  <text x="34" y="288" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">backend/</text>
+  <text x="168" y="288" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Java · Spring · Kotlin · Go · POO · DTOs</text>
+  <text x="34" y="310" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">frontend/</text>
+  <text x="168" y="310" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">React · Next.js · TypeScript · Tailwind · Vite</text>
+  <text x="34" y="332" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">mobile/</text>
+  <text x="168" y="332" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">Android · Compose · Expo · React Native</text>
+  <text x="34" y="354" fill="#E2620F" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">qa/</text>
+  <text x="168" y="354" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">JUnit · Selenium · Cypress · pytest</text>
+  <text x="168" y="376" fill="#E8CBA6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="15">JMeter · Qase · ZenHub</text>
 
   <!-- ================= right panel ================= -->
   <rect x="626" y="74" width="314" height="312" rx="9" fill="#2A180D" stroke="#4A2A15"/>

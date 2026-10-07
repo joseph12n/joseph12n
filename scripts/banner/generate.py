@@ -90,7 +90,7 @@ YAML_ROWS = [
     (1, "status", "Aprendiendo · Construyendo · Enviando"),
     (1, "toolchain", "Maven · Gradle · Docker · GitHub Actions"),
     (0, "stack", ""),
-    (1, "backend", "Java · Kotlin · Spring Boot"),
+    (1, "backend", "Java · Kotlin · Spring Boot · Go"),
     (1, "frontend", "React · Next.js · TypeScript · Tailwind"),
     (1, "mobile", "Android · Jetpack Compose · Expo"),
     (1, "data", "MongoDB · PostgreSQL · MySQL · Redis"),

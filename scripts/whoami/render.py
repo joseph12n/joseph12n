@@ -43,11 +43,34 @@ DETAIL = [
     (34, 224, "learning:", "Docker · Kubernetes · MongoDB aggregations", AMBER, 15),
 ]
 EXPERTISE = [
-    (298, "backend/", "Java · Spring Boot · Kotlin · POO · capas · DTOs"),
-    (322, "frontend/", "React · Next.js · TypeScript · Tailwind · Vite"),
-    (346, "mobile/", "Android · Compose · Expo · React Native"),
-    (370, "qa/", "JUnit · Selenium · Cypress · pytest · JMeter · Qase · ZenHub"),
+    # (y, folder, items). Items start at x=168 and must end at x<=600,
+    # leaving a 26px gutter before the meters panel at x=626.
+    (288, "backend/", "Java · Spring · Kotlin · Go · POO · DTOs"),
+    (310, "frontend/", "React · Next.js · TypeScript · Tailwind · Vite"),
+    (332, "mobile/", "Android · Compose · Expo · React Native"),
+    (354, "qa/", "JUnit · Selenium · Cypress · pytest"),
+    (376, "", "JMeter · Qase · ZenHub"),
 ]
+
+ITEMS_X = 168
+CONTENT_LIMIT_X = 600  # hard edge: the meters panel starts at x=626
+
+
+def items_width(body: str, size: int = 15) -> float:
+    """Estimate rendered width of a monospace run. Conservative on purpose."""
+    return ITEMS_X + len(body) * size * 0.605
+
+
+def check_margins() -> None:
+    """Fail loudly if any expertise line crosses into the meters panel."""
+    bad = [
+        (folder or "…", round(items_width(items)))
+        for _, folder, items in EXPERTISE
+        if items_width(items) > CONTENT_LIMIT_X
+    ]
+    if bad:
+        detail = ", ".join(f"{name}→x{end}" for name, end in bad)
+        raise SystemExit(f"margin overflow past x{CONTENT_LIMIT_X}: {detail}")
 
 
 def text(x, y, body, fill, size=13, anchor=None, weight=None) -> str:
@@ -98,8 +121,9 @@ def render(values: list[float]) -> str:
         text(34, 266, "❯ ls expertise/", FLAME, 17, weight="700"),
     ]
     for y, folder, items in EXPERTISE:
-        p.append(text(34, y, folder, EMBER, 15))
-        p.append(text(168, y, items, "#E8CBA6", 15))
+        if folder:
+            p.append(text(34, y, folder, EMBER, 15))
+        p.append(text(ITEMS_X, y, items, "#E8CBA6", 15))
 
     p += [
         "",
@@ -152,6 +176,7 @@ def main() -> None:
             f"{len(METER_LABELS)} meters. Add a row to METER_LABELS or drop an axis."
         )
 
+    check_margins()
     args.out.write_text(render(values), encoding="utf-8")
     pairs = ", ".join(f"{lbl}={v:g}" for lbl, v in zip(METER_LABELS, values))
     print(f"wrote {args.out.relative_to(ROOT)}  ({len(values)} meters: {pairs})")
